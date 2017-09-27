@@ -7,34 +7,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet">
 
-    <script>
-        var i = 0;
-
-        document.getElementById("add").innerHTML = i;
-
-        function myFunction() {
-
-            // document.getElementById('inc').value = ++i;
-
-
-            //document.getElementsByClassName("add").value = ++i;
-            let incbut = array.from(docutment.getelementbyclassName('add'))
-
-            incbut.forech(bttn >= ()) {
-
-
-            }
-
-
-
-            incbut.addEventListener("click"), e => {
-                let currentCount = btnnextsibling.textcontent
-                newCount = parseInt(currentCount) + 1
-            }
-    </script>
-
-
-
 </head>
 
 <body>
@@ -131,11 +103,9 @@
                 <div class="fright">
                     <p class="tighten">Robert O'Leary@nightblade&#9642;Sep 27</p>
                     <p class="tighten">Wow bootstrap sucks #stupidcrap #curses</p>
-                    <li class="glyphicon glyphicon-heart add"></li>1.1k
-                    <p class="tighten"> 32 <span class="glyphicon">&#xe111;</span> 1.1k <span class="glyphicon glyphicon-retweet add"></span> 50 <span onclick="myFunction()" class="glyphicon glyphicon-heart add"></span>
+                    <p class="tighten"> 32 <span class="glyphicon">&#xe111;</span> 1.1k <span class="glyphicon glyphicon-retweet add"></span> 50 <span class="glyphicon glyphicon-heart add"></span>20
                         <span class="glyphicon glyphicon-envelope"></span></p>
                 </div>
-
 
             </div>
 
@@ -183,7 +153,17 @@
         </div>
     </div>
 
+    <script>
+        let incrementButtons = Array.from(document.getElementsByClassName("add"))
 
+        incrementButtons.forEach(btn => {
+            btn.addEventListener("click", e => {
+                let currcount = btn.nextSibling.textContent.trim()
+                newcount = parseInt(currcount) + 1
+                btn.nextSibling.textContent = newcount;
+            })
+        })
+    </script>
 </body>
 
 </html>
