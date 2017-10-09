@@ -155,17 +155,8 @@
 
         </div>
     </div>
-<script>
 
-	
-	$(".add").click(function(target.event){
-	let increase = $(".count").text();
-	increase ++
-        $(".count").text(increase);
-    });
-	
-</script>
-   // <script>
+    <script>
    //     let incrementButtons = Array.from(document.getElementsByClassName("add"))
 
     //    incrementButtons.forEach(btn => {
@@ -175,19 +166,16 @@
       //          btn.nextSibling.textContent = newcount;
        //     })
        // })
-   // </script>
+    </script>
+	<script>
+		$(function(){
+			$(".add").click(function(event){
+				let increase = $(this).next().text()
+				increased = parseInt(increase) + 1
+				$(this).next().text(increased)
+			})
+		})
+</script>
 </body>
 
 </html>
-<script>
-
-
-	//$(function(){
-	$(".add").click((event) =>{
-	//console.log(event.target)
-	let increase = $(".count").text();
-	increase ++
-        $(".count").text(increase);
-    });
-	}
-</script>
