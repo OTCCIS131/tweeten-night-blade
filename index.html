@@ -96,16 +96,16 @@
                         <span class="glyphicon glyphicon-pushpin"></span></a>
 
                     <span class="right"><p class = "left"> 140</p>
-										<button type="button" class="btn btn-primary right">Tweet</button></span>
+										<button type="button" class="btn btn-primary right tweetb">Tweet</button></span>
                 </div>
             </div>
 
-            <div class="bords1">
+            <div class="bords1 baseTweet tweets">
                 <p class="heading1">Tweets&#9642;Tweets & Replies&#9642;Media</p>
                 <img src="images/mrme.gif" alt="profile image">
                 <div class="fright">
                     <p class="tighten">Robert O'Leary@nightblade&#9642;Sep 27</p>
-                    <p class="tighten">Wow bootstrap sucks #stupidcrap #curses</p>
+                    <p class="tighten content">Wow bootstrap sucks #stupidcrap #curses</p>
                     <p class="tighten"> 32 <span class="glyphicon">&#xe111;</span> 1.1k <span class="glyphicon glyphicon-retweet add"></span><span class = count>50</span>  <span class="glyphicon glyphicon-heart add"></span><span class = count>20</span>
                         <span class="glyphicon glyphicon-envelope"></span></p>
                 </div>
@@ -175,6 +175,20 @@
 				$(this).next().text(increased)
 			})
 		})
+ let tweeters = Array.from(document.getElementsByClassName("tweetb"))
+
+        tweeters.forEach(btn => {
+           btn.addEventListener("click", e => {
+			 
+				var base = document.getElementsByClassName("baseTweet");
+			 	var baseC = base.cloneNode(true);
+				var newTweet = document.getElementsByClassName("tweet").value;
+				copy.querySelector(".content").innerHTML = newTweet;
+				document.getElementsByClassNameById("tweets").appendChild(copy);
+			})
+		})
+		
+		
 </script>
 </body>
 
