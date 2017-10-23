@@ -1,195 +1,188 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>Tweeten</title>
+		<!-- Latest compiled and minified CSS -->
+		 <!--bootstrap css  -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		 <!--my css  -->
+		<link href="styles.css" rel="stylesheet">
+		 <!-- jquery -->
+		<script
+			src="http://code.jquery.com/jquery-3.2.1.js"
+			integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+			crossorigin="anonymous">
+		</script>
+	</head>
 
-<head>
-    <title>Bootstrap starter page</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="styles.css" rel="stylesheet">
-	<script
-		src="http://code.jquery.com/jquery-3.2.1.js"
-		integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-		crossorigin="anonymous"></script>
-</head>
+	<body>
+		<header>
 
-<body>
-    <header>
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
+						<a class="navbar-brand" href="#">Tweeten</a>
+					</div>
 
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#" class="glyphicon">&#xe021; Home <span class="sr-only">(current)</span></a></li>
+							<li><a href="#" class="glyphicon">&#xe123; Notifications <span class="sr-only">(current)</span></a></li>
+							<li><a href="#" class="glyphicon">&#x2709; Messages <span class="sr-only">(current)</span></a></li>
 
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				  </button>
-                    <a class="navbar-brand" href="#">Tweeten</a>
-                </div>
+						</ul>
+						<form class="navbar-form navbar-right">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Search">
+							</div>
+							<button type="button" class="btn btn-default btn-sm">
+								<span class="glyphicon glyphicon-search"></span></button>
+							<img src="images/srme.gif" alt="profile image" height="40" width="40">
+							<button type="submit" class="btn btn-primary">Tweet</button>
+						</form>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container-fluid -->
+			</nav>
+		</header>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#" class="glyphicon">&#xe021; Home <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#" class="glyphicon">&#xe123; Notifications <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#" class="glyphicon">&#x2709; Messages <span class="sr-only">(current)</span></a></li>
+		<div class="row">
 
+			<div class="col-md-4 col-sm-6 col-xs-12 tilel">
+				<img src="images/rme.gif" alt="profile image">
 
-                    </ul>
-                    <form class="navbar-form navbar-right">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search">
-                        </div>
-                        <button type="button" class="btn btn-default btn-sm">
-						<span class="glyphicon glyphicon-search"></span></button>
-                        <img src="images/srme.gif" alt="profile image" height="40" width="40">
-                        <button type="button" class="btn btn-primary">Tweet</button>
-                    </form>
-                    </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container-fluid -->
-        </nav>
-    </header>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+				<h2>Robert O'Leary</h2>
+				<h5 class="tight">@nightblade</h5>
+				<h4 class="tighten">Jack of all trades</h4>
+				<h4 class="tighten">From home</h4>
+				<a href="https://twitter.com/artisangoose?lang=en" class="grow tighten">@artisangoose Is my friend</a>
 
-    <div class="row">
+				<div class="about">
+					<p class="tighten">Springfield, Mo</p>
+					<p class="tighten"><a href="https://www.facebook.com/robert.oleary.180">Robert.com</a></p>
+					<p class="tighten">Joined 11/06/1987</p>
+					<p class="tighten">00 Photos and Videos</p>
+				</div>
+			</div>
 
+			<div class="col-md-4 col-sm-6 col-xs-12 tile2">
 
-        <div class="col-md-4 tilel">
-            <img src="images/rme.gif" alt="profile image">
+				<div class="bords ">
+					<div>
+						<p class="heading">Compose new Tweet</p>
+					</div>
 
-            <h2>Robert O'Leary</h2>
-            <h5 class="tight">@nightblade</h5>
-            <h4 class="tighten">Jack of all trades</h4>
-            <h4 class="tighten">From home</h4>
-            <a href="https://twitter.com/artisangoose?lang=en" class="grow tighten">@artisangoose Is my friend</a>
+					<div class="sized">
+						<form id = "orignalTweet">
+							<textarea maxlength="140" rows="3" cols="33"  class="tweet userTweet" id= "typedTweet"></textarea>
+							<a href="#" class="btn btn-info btn-sm">
+								<span class="glyphicon glyphicon-picture"></span></a>
+							<a href="#" class="btn btn-info btn-sm">
+								<span class="glyphicon glyphicon-pushpin"></span></a>
+							<span class="right"><p class = "left" id="chars"> 140</p>
+							<button type="submit" class="btn btn-primary right press">Tweet</button></span>
+						</form>					
+					</div>
+				</div>
+	<!--tweets-->		
+				<div class="bords1">
+					<p class="heading1">Tweets&#9642;Tweets & Replies&#9642;Media</p>
+					 <div class="insertCopy"></div>
+					 
+					<form id = "orignalTweet" class="firstTweet"> 
+						<img src="images/mrme.gif" alt="profile image">
+						<div class="floatright">
+							<p class="tighten">Robert O'Leary   @nightblade  &#9642;   Sep 27</p>
+							<p class="tighten" id = "content">Wow bootstrap sucks #stupidcrap #curses</p>
+							<p class="tighten"> 32 <span class="glyphicon">&#xe111;</span> 1.1k <span class="glyphicon glyphicon-retweet add"></span><span class = count>50</span>  <span class="glyphicon glyphicon-heart add"></span><span class = count>20</span>
+							<span class="glyphicon glyphicon-envelope"></span></p>
+						</div>
+					</form>	
+				</div>
+			</div>
 
-            <div class="about">
-                <p class="tighten">Springfield, Mo</p>
-                <p class="tighten"><a href="https://www.facebook.com/robert.oleary.180">Robert.com</a></p>
-                <p class="tighten">Joined 11/06/1987</p>
-                <p class="tighten">00 Photos and Videos</p>
-            </div>
-        </div>
+			<div class="col-md-4 col-sm-6 col-xs-12 tile">
+				<div class="bords2 ">
+					<div>
+						<p class="heading">Your Tweet Activity</p>
+					</div>
+					<p>You've tweeted once. Dont be too proud of yourself.</p>
+				</div>
 
+				<div>
+					<div class="bords2">
+						<p class="heading1">Who to Follow</p>
+						<div class="bords3"><img src="images/ever.gif" alt="profile image">
+							<div class="cright">
+								<h4>@OGEverlast</h4>
+								<button type="button" class="btn btn-primary">Follow</button></span>
+							</div>
+						</div>
+						<div class="bords3"><img src="images/braz.gif" alt="profile image">
+							<div class="cright">
+								<h4>@Brazzers</h4>
+								<button type="button" class="btn btn-primary">Follow</button></span>
+							</div>
+						</div>
+						<div class="bords3"><img src="images/ltt.gif" alt="profile image">
+							<div class="cright">
+								<h4>@LinusTech</h4>
+								<button type="button" class="btn btn-primary fleft">Follow</button></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
+		<script>
+	   //     let incrementButtons = Array.from(document.getElementsByClassName("add"))
 
-        <div class="col-md-4 tile2">
-
-
-            <div class="bords ">
-                <div>
-                    <p class="heading">Compose new Tweet</p>
-                </div>
-                <div class="sized">
-                    <textarea name="message" rows="4" cols="35" class="tweet">
-									</textarea>
-                    <a href="#" class="btn btn-info btn-sm">
-                        <span class="glyphicon glyphicon-picture"></span></a>
-                    <a href="#" class="btn btn-info btn-sm">
-                        <span class="glyphicon glyphicon-pushpin"></span></a>
-
-                    <span class="right"><p class = "left"> 140</p>
-										<button type="button" class="btn btn-primary right tweetb">Tweet</button></span>
-                </div>
-            </div>
-
-            <div class="bords1 baseTweet tweets">
-                <p class="heading1">Tweets&#9642;Tweets & Replies&#9642;Media</p>
-                <img src="images/mrme.gif" alt="profile image">
-                <div class="fright">
-                    <p class="tighten">Robert O'Leary@nightblade&#9642;Sep 27</p>
-                    <p class="tighten content">Wow bootstrap sucks #stupidcrap #curses</p>
-                    <p class="tighten"> 32 <span class="glyphicon">&#xe111;</span> 1.1k <span class="glyphicon glyphicon-retweet add"></span><span class = count>50</span>  <span class="glyphicon glyphicon-heart add"></span><span class = count>20</span>
-                        <span class="glyphicon glyphicon-envelope"></span></p>
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <div class="col-md-4 tile1">
-            <div class="bords2 ">
-                <div>
-                    <p class="heading">Your Tweet Activity</p>
-                </div>
-                <p>You've tweeted once. Dont be too proud of yourself.</p>
-            </div>
-
-            <div>
-                <div class="bords2">
-                    <p class="heading1">Who to Follow</p>
-
-                    <div class="bords3"><img src="images/ever.gif" alt="profile image">
-
-                        <div class="cright">
-                            <h4 class="fleft">@OGEverlast</h4>
-                            <button type="button" class="btn btn-primary">Follow</button></span>
-                        </div>
-                    </div>
-
-                    <div class="bords3"><img src="images/braz.gif" alt="profile image">
-                        <div class="cright">
-                            <h4 class="fleft">@Brazzers</h4>
-                            <button type="button" class="btn btn-primary">Follow</button></span>
-                        </div>
-                    </div>
-
-                    <div class="bords3"><img src="images/ltt.gif" alt="profile image">
-                        <div class="cright">
-                            <h4 class="fleft">@LinusTech</h4>
-                            <button type="button" class="btn btn-primary fleft">Follow</button></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-
-    <script>
-   //     let incrementButtons = Array.from(document.getElementsByClassName("add"))
-
-    //    incrementButtons.forEach(btn => {
-     //       btn.addEventListener("click", e => {
-      //          let currcount = btn.nextSibling.textContent.trim()
-      //          newcount = parseInt(currcount) + 1
-      //          btn.nextSibling.textContent = newcount;
-       //     })
-       // })
-    </script>
-	<script>
-		$(function(){
-			$(".add").click(function(event){
-				let increase = $(this).next().text()
-				increased = parseInt(increase) + 1
-				$(this).next().text(increased)
-			})
-		})
- let tweeters = Array.from(document.getElementsByClassName("tweetb"))
-
-        tweeters.forEach(btn => {
-           btn.addEventListener("click", e => {
-			 
-				var base = document.getElementsByClassName("baseTweet");
-			 	var baseC = base.cloneNode(true);
-				var newTweet = document.getElementsByClassName("tweet").value;
-				copy.querySelector(".content").innerHTML = newTweet;
-				document.getElementsByClassNameById("tweets").appendChild(base);
-			})
-		})
-		
-		
-</script>
-</body>
-
+		//    incrementButtons.forEach(btn => {
+		 //       btn.addEventListener("click", e => {
+		  //          let currcount = btn.nextSibling.textContent.trim()
+		  //          newcount = parseInt(currcount) + 1
+		  //          btn.nextSibling.textContent = newcount;
+		   //     })
+		   // })
+		   
+		</script>
+				<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+			<!-- Include all compiled plugins (below), or include individual files as needed -->
+			<script src="js/bootstrap.min.js"></script>
+			<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script>
+			$(function(){
+				$(".add").click(function(event){
+					let increase = $(this).next().text()
+					increased = parseInt(increase) + 1
+					$(this).next().text(increased)
+				})
+			})				
+			$(function() {
+				let copyFirstTweet = $(".firstTweet").clone(true)
+				$("#orignalTweet").submit(function(e) {
+					e.preventDefault()
+					if ($("#typedTweet").val() != "") {
+						$(".insertCopy").after(copyFirstTweet.clone(true))
+						let newText = $("#typedTweet").val()
+						$('#content').replaceWith(newText)
+						$('.userTweet').val('');
+					}
+				})
+			});
+		</script>
+	</body>
 </html>
