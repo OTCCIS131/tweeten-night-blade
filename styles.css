@@ -44,7 +44,7 @@ body{
 }
 @media (min-width: 992px){
 .col-md-4 {
-    width: 32.33333333%;
+    width: 31%;
 	}
 }
 #content{
@@ -99,9 +99,7 @@ body{
 }
 .tile2{
 	margin-top:15px;
-	width: 425px;
 	min-width: 416px;
-	
 	padding: 5px;
 }
 .tilel{
